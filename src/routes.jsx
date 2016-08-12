@@ -5,5 +5,11 @@ import {CounterPage} from 'Counter/CounterPage.jsx';
 import {AboutPage} from 'About/AboutPage.jsx';
 
 export default (
-
+  <Route path="/" component={App}>
+    <IndexRoute component={CounterPage}/>
+    <Route path="counter" component={CounterPage}/>
+    <Route path="about/:name" component={AboutPage}/>
+    {/*<Route path="about/:name" component={AboutPage}/>*/}
+    {/* when you add /:name the url will become localhost:port/about/anyname */}
+  </Route>
 );
