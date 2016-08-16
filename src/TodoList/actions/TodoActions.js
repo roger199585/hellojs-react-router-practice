@@ -1,6 +1,7 @@
 // action type (set up a name for action)
 export const ADD_TODO = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const DEL_TODO = 'DEL_TODO'
 
 // action creator (usually will have the same name with action type)
 export function addTodo(text) {
@@ -29,3 +30,7 @@ export function toggleTodo(index) {
   }
 }
 */
+
+export function delTodo(index) {
+  return {type: DEL_TODO, index}
+}

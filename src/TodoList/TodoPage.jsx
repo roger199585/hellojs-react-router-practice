@@ -7,10 +7,13 @@ import AppReducers from 'TodoList/reducers/AppReducers'
 
 let store = createStore(AppReducers, window.devToolsExtension && window.devToolsExtension());
 
-let rootElement = document.getElementById('root');
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  rootElement
-);
+//let rootElement = document.getElementById('root');
+export class TodoPage extends React.Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    )
+  }
+}

@@ -16,7 +16,7 @@ export class App extends React.Component {
             <button> About Page</button>
           </Link>
           <Link to='/todo'>
-            <button>Todo Page</button>
+            <button> Todo Page</button>
           </Link>
         </div>
         {this.props.children}
